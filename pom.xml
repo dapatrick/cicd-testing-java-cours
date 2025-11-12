@@ -13,6 +13,7 @@
     <bootstrap.version>4.3.1</bootstrap.version>
     <springboot.version>2.2.0.RELEASE</springboot.version>
     <sonar.projectKey>tech.zerofiltre.testing:calculator</sonar.projectKey>
+    <jacoco.version>0.8.14</jacoco.version>
   </properties>
 
   <parent>
@@ -106,7 +107,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.2</version>
+        <version>${jacoco.version}</version>
         <executions>
           <execution>
             <goals>
