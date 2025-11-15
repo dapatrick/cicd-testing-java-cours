@@ -8,8 +8,8 @@ def EMAIL_RECIPIENTS = "patrick.dapa@gmail.com"
 node {
     try {
         stage('Initialize') {
-            def dockerHome = tool 'DockerLatest'
-            def mavenHome = tool 'MavenLatest'
+            def dockerHome = tool 'dockerlatest'
+            def mavenHome = tool 'mavenlatest'
             env.PATH = "${dockerHome}/bin:${mavenHome}/bin:${env.PATH}"
         }
 
