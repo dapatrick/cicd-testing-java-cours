@@ -8,12 +8,13 @@
   <properties>
     <dep.junit.version>5.5.2</dep.junit.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
     <bootstrap.version>4.3.1</bootstrap.version>
     <springboot.version>2.2.0.RELEASE</springboot.version>
     <sonar.projectKey>tech.zerofiltre.testing:calculator</sonar.projectKey>
     <jacoco.version>0.8.14</jacoco.version>
+    <java.version>11</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
   </properties>
 
   <parent>
