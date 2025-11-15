@@ -23,7 +23,7 @@ node {
         }
 
         stage('Sonarqube Analysis') {
-            withSonarQubeEnv('SonarQubeLocalServer') {
+            withSonarQubeEnv('localhost_sonarqube') {
                 sh " mvn sonar:sonar -Dintegration-tests.skip=true -Dmaven.test.failure.ignore=true"
             }
             timeout(time: 1, unit: 'MINUTES') {
